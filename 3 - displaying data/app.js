@@ -8,6 +8,12 @@ let person = {
 }
 
 function displayData(data) {
-  // Use the data that you take in to create an unordered list containing the persons information.
-  // your code here
+  let myList = document.createElement("ul");
+
+  for (var variable in data) {
+    let myItem = document.createElement("li");
+     myItem.innerHTML = variable + " - " + data[variable];
+     myList.appendChild(myItem);
+  }
+  document.body.appendChild(myList);
 }
