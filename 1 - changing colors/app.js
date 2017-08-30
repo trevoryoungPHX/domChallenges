@@ -2,6 +2,10 @@
 document.body.onload = changeColors;
 
 function changeColors () {
-  // Change the color of the header text to red and change the color of the p tags to blue and the font size of the p tags to 10px.
-  // your code here
+document.getElementById('change-header').style.color = "red";
+let parArr = document.getElementsByTagName("p");
+for(let i = 0; i<parArr.length; i++) {
+  parArr[i].style.color = "blue";
+  parArr[i].style.fontSize = "10px";
+}
 }

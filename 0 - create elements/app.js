@@ -2,6 +2,7 @@
 document.body.onload = addElement;
 
 function addElement () {
-  // Create a div with js and put some placeholder text in it
-  // your code here
+let myDiv = document.createElement("div");
+myDiv.innerHTML = "Trevor Young";
+document.body.appendChild(myDiv);
 }
